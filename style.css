@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    margin: 3rem 1.75rem 2.25rem 1.75rem;
+}
+
+.h1 {
+    font-size: 1.65rem;
+    text-align: center;
+}
+
+.light {
+    font-weight: 90;
+    opacity: 0.4;
+}
+
+
+.dark {
+    font-weight: 550;
+    /* opacity: 0.4; */
+}
+
+
+.top {
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.container {
+    max-width: 1111px;
+    /* margin-inline: auto; */
+    display: grid;
+    grid-template-areas:
+        'supervisor'    
+        'team-builder'
+        'karma'
+        'calculator'
+    
+    ;
+    margin-inline: auto;
+
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.box {
+    max-width: 341px;
+    /* height: 250px; */
+    overflow:hidden;
+    box-shadow: 0px 3px 7px #888888;
+    padding-inline: 1.75rem;
+    padding-block: 12px 1.2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+ 
+.box h2 {
+    font-size: 1.25rem;
+    font-weight: 550;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+.box-1 {
+    border-top: 4px solid #51CDCC;
+    grid-area: supervisor;
+
+}
+.box-2 {
+    border-top: 4px solid #DC5A5B;
+    grid-area: team-builder;
+
+}
+.box-3 {
+    border-top: 4px solid #F1AA58;
+    grid-area: karma;
+
+}
+.box-4 {
+    border-top: 4px solid #5C9CE3;
+    grid-area: calculator;
+
+}
+
+
+
+@media(width>850px) {
+    .container {
+        grid-template-areas: 
+            'hey team-builder hello'
+            'supervisor team-builder calculator'
+            'supervisor karma calculator'
+            'mic karma testing'
+        ;
+        gap: 2rem;
+    }
+
+    .box-1 {
+    }
+    .box-2 {
+    }
+    .box-3 {
+    }
+    .box-4 {
+    }
+}
